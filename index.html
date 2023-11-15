@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Burger Menu</title>
+</head>
+<body>
+    <header class="bg-gradient-to-br from-slate-600 to-slate-900 p-4">
+      <nav class="container mx-auto">
+        <!-- menu desktop  -->
+        <div class="flex justify-between">
+          <a href="#" class="flex items-center">
+            <img class="h-10 mr-3" src="./images/logo.png" alt="Burger Menu">
+            <p class="text-xl leading-6 font-bold flex flex-col items-center">
+              <span class="text-amber-500">Burger</span>
+              <span class="text-white">Menu</span>
+            </p>
+          </a>
+          <ul class="hidden md:flex md:space-x-4 md:items-center">
+            <li><a class="text-white" href="#">Burgers</a></li>
+            <li><a class="text-white" href="#">Salades</a></li>
+            <li><a class="text-white" href="#">Desserts</a></li>
+            <li><a class="text-white" href="#">Boissons</a></li>
+          </ul>
+          <!-- icone  -->
+          <div class="flex items-center md:hidden">
+            <button id="mobile-menu-button">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 text-white">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- menu mobile  -->
+        <ul id="mobile-menu" class="hidden pt-4 md:hidden">
+          <li class="mt-1"><a class="text-white" href="#">Burgers</a></li>
+          <li class="mt-1"><a class="text-white" href="#">Salades</a></li>
+          <li class="mt-1"><a class="text-white" href="#">Desserts</a></li>
+          <li class="mt-1"><a class="text-white" href="#">Boissons</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="p-4">
+      <h1 class="mt-4 text-2xl text-center md:text-5xl font-bold">Menu responsive avec Tailwind CSS et JavaScript</h1>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
